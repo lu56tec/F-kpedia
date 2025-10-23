@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orações - Fékpedia</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#7b3fe4;--muted:#6b7280;--bg:#f7f7fb}
+*{box-sizing:border-box;font-family:Inter,Arial,sans-serif}
+body{margin:0;background:var(--bg);color:#111}
+header{background:#fff;border-bottom:1px solid #e6e9ef;position:sticky;top:0;z-index:50}
+.container{max-width:1100px;margin:0 auto;padding:18px}
+.nav{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-weight:700;color:var(--accent)}
+nav a{color:#111;text-decoration:none;padding:8px 10px;border-radius:8px}
+nav a:hover{background:#f0f3ff}
+.search-wrap{margin-left:auto;display:flex;gap:8px;align-items:center}
+input[type="search"]{padding:10px 12px;border:1px solid #e2e8f0;border-radius:10px;min-width:220px}
+button.clear-btn{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+button.clear-btn:hover{opacity:0.9}
+main{padding:28px 0}
+.muted{color:var(--muted)}
+footer{padding:24px 0;color:#666;border-top:1px solid #e6e9ef;margin-top:40px}
+mark{background:yellow;padding:0 3px;border-radius:3px}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="logo">Fékpedia</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="oracoes.html">Orações</a>
+      <a href="leiturasgerais.html">Leituras Gerais</a>
+      <a href="leiturasdodia.html">Leituras do dia</a>
+      <a href="santos.html">Todos os Santos e Santas</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="blog.html">Blog</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="siteSearch" type="search" placeholder="Pesquisar...">
+      <button class="clear-btn" id="clearSearch">Limpar</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Orações Católicas</h1>
+  <p class="muted">Reze com fé e encontre paz espiritual.</p>
+
+  <h3>Oração do Pai-Nosso</h3>
+  <p>Pai Nosso, que estais no Céu, santificado seja o vosso nome, venha a nós o vosso Reino, seja feita a vossa vontade, assim na terra como no Céu. O pão nosso de cada dia nos dai hoje. Perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido. E não nos deixeis cair em tentação, mas livrai-nos do mal. Amém</p>
+
+  <h3>Ave-Maria</h3>
+  <p>Ave Maria, cheia de graça, o Senhor é convosco. Bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora de nossa morte. Amém</p>
+
+  <h3>Credo Apóstolico</h3>
+  <p>Creio em Deus, Pai todo-poderoso, Criador do Céu e da Terra
+
+e em Jesus Cristo, seu único Filho, nosso Senhor
+que foi concebido pelo poder do Espírito Santo;
+nasceu da Virgem Maria; 
+padeceu sob Pôncio Pilatos, 
+foi crucificado, morto e sepultado; 
+desceu à mansão dos mortos; 
+ressuscitou ao terceiro dia; 
+subiu aos Céus; 
+está sentado à direita de Deus Pai todo-poderoso, 
+de onde há de vir a julgar os vivos e os mortos.
+
+Creio no Espírito Santo; 
+na santa Igreja Católica; 
+na comunhão dos Santos; 
+na remissão dos pecados; 
+na ressurreição da carne; 
+e na vida eterna. Amém.</p>
+
+<h3>Credo Niceno-Constantinopolitano</h3>
+  <p>Creio em um só Deus, Pai Todo-Poderoso, criador do céu e da terra, / de todas as coisas visíveis e invisíveis. / Creio em um só Senhor, Jesus Cristo, Filho Unigênito de Deus, / nascido do Pai antes de todos os séculos: Deus de Deus, luz da luz, / Deus verdadeiro de Deus verdadeiro, / gerado, não criado, consubstancial ao Pai. / Por ele todas as coisas foram feitas. / E por nós, homens, e para nossa salvação, desceu dos céus:
+(aqui todos se ajoelhem)
+e se encarnou pelo Espírito Santo, / no seio da Virgem Maria, e se fez homem.
+(aqui todos se levantem)
+Também por nós foi crucificado sob Pôncio Pilatos; / padeceu e foi sepultado. / Ressuscitou ao terceiro dia, / conforme as Escrituras, / e subiu aos céus, / onde está sentado à direita do Pai. / E de novo há de vir, / em sua glória, / para julgar os vivos e os mortos; / e o seu reino não terá fim. / Creio no Espírito Santo, / Senhor que dá a vida, / e procede do Pai e do Filho; / e com o Pai e o Filho é adorado e glorificado: / ele que falou pelos profetas. / Creio na Igreja, una, santa, católica e apostólica. / Professo um só batismo para remissão dos pecados. / E espero a ressurreição dos mortos / e a vida do mundo que há de vir. - Amém.
+
+</p>
+
+</main>
+
+<footer class="container">
+  <strong>Fékpedia</strong><br>
+  <span class="muted">Email: contato@exemplo.org</span>
+</footer>
+
+<script>
+(function(){
+  const input = document.getElementById('siteSearch');
+  const clearBtn = document.getElementById('clearSearch');
+  if (!input) return;
+
+  // cria controles (⬆⬇ + contador)
+  const navDiv = document.createElement('div');
+  navDiv.style.display = 'flex';
+  navDiv.style.alignItems = 'center';
+  navDiv.style.gap = '4px';
+  navDiv.style.marginLeft = '8px';
+  navDiv.innerHTML = `
+    <button id="prevResult" style="background:var(--accent,#7b3fe4);color:#fff;border:none;padding:6px 10px;border-radius:6px;cursor:pointer;">⬆</button>
+    <button id="nextResult" style="background:var(--accent,#7b3fe4);color:#fff;border:none;padding:6px 10px;border-radius:6px;cursor:pointer;">⬇</button>
+    <span id="searchCountDisplay" style="font-size:13px;color:var(--muted,#6b7280);"></span>
+  `;
+  document.querySelector('.search-wrap')?.appendChild(navDiv);
+
+  const prevBtn = document.getElementById('prevResult');
+  const nextBtn = document.getElementById('nextResult');
+  const countEl = document.getElementById('searchCountDisplay');
+
+  // Funções utilitárias
+  function escapeRegExp(str){return str.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+
+  function clearHighlights(root){
+    (root||document).querySelectorAll('mark.__site_highlight').forEach(m=>{
+      const p=m.parentNode;
+      p.replaceChild(document.createTextNode(m.textContent),m);
+      p.normalize();
+    });
+  }
+
+  function highlightAll(term){
+    clearHighlights(document.querySelector('main')||document.body);
+    if(!term)return[];
+
+    const main=document.querySelector('main')||document.body;
+    const walker=document.createTreeWalker(main,NodeFilter.SHOW_TEXT,null,false);
+    const textNodes=[];
+    let node;
+    while((node=walker.nextNode())){
+      const tag=node.parentNode.tagName;
+      if(['SCRIPT','STYLE','TEXTAREA','INPUT'].includes(tag))continue;
+      if(node.parentNode.closest('.search-wrap,header,nav,footer'))continue;
+      if(node.nodeValue.trim()!=='')textNodes.push(node);
+    }
+
+    const regex=new RegExp(escapeRegExp(term),'gi');
+    for(const txt of textNodes){
+      if(!regex.test(txt.nodeValue))continue;
+      const span=document.createElement('span');
+      span.innerHTML=txt.nodeValue.replace(regex,'<mark class="__site_highlight">$&</mark>');
+      txt.parentNode.replaceChild(span,txt);
+    }
+
+    const all=document.querySelectorAll('mark.__site_highlight');
+    countEl.textContent=all.length?`${all.length} resultado(s)`:'';
+    return Array.from(all);
+  }
+
+  let results=[],currentIndex=-1;
+
+  function selectResult(index){
+    if(!results.length)return;
+    results.forEach(m=>m.style.background='yellow');
+    if(index<0)index=results.length-1;
+    if(index>=results.length)index=0;
+    currentIndex=index;
+    results[currentIndex].style.background='orange';
+    results[currentIndex].scrollIntoView({behavior:'smooth',block:'center'});
+  }
+
+  input.addEventListener('input',()=>{
+    const term=input.value.trim();
+    currentIndex=-1;
+    results=highlightAll(term);
+    if(results.length)selectResult(0);
+  });
+
+  clearBtn.addEventListener('click',()=>{
+    input.value='';
+    clearHighlights(document.querySelector('main')||document.body);
+    countEl.textContent='';
+    results=[];
+    currentIndex=-1;
+    input.focus();
+  });
+
+  nextBtn.addEventListener('click',()=>{if(results.length)selectResult(currentIndex+1);});
+  prevBtn.addEventListener('click',()=>{if(results.length)selectResult(currentIndex-1);});
+})();
+</script>
+
+</body>
+</html>
